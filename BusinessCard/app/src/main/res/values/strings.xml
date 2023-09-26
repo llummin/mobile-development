@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="full_name">Maxim Elushev</string>
+    <string name="position">Java Developer</string>
+    <string name="telegram_profile">\@llummin</string>
+    <string name="phone_number">+7 937 616-56-95</string>
+    <string name="github_profile">\@llummin</string>
+</resources>
