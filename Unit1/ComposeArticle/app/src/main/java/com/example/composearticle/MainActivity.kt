@@ -55,7 +55,7 @@ private fun ArticleCard(
     imagePainter: Painter,
     modifier: Modifier = Modifier,
 ) {
-    Column(modifier = modifier) {
+    Column(modifier = modifier)     {
         Image(painter = imagePainter, contentDescription = null)
         Text(
             text = title,
