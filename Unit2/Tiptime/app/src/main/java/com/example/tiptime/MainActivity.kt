@@ -3,6 +3,8 @@ package com.example.tiptime
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material3.TextField
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -56,6 +58,7 @@ fun TipTimeLayout() {
                 .padding(bottom = 16.dp, top = 40.dp)
                 .align(alignment = Alignment.Start)
         )
+        EditNumberField(modifier = Modifier.padding(bottom = 32.dp).fillMaxWidth())
         Text(
             text = stringResource(R.string.tip_amount, "$0.00"),
             style = MaterialTheme.typography.displaySmall
@@ -72,6 +75,16 @@ fun TipTimeLayout() {
 private fun calculateTip(amount: Double, tipPercent: Double = 15.0): String {
     val tip = tipPercent / 100 * amount
     return NumberFormat.getCurrencyInstance().format(tip)
+}
+
+@Composable
+fun EditNumberField(modifier: Modifier = Modifier) {
+    val amountInput = "0"
+    TextField(
+        value = amountInput,
+        onValueChange = {},
+        modifier = modifier
+    )
 }
 
 @Preview(showBackground = true)
