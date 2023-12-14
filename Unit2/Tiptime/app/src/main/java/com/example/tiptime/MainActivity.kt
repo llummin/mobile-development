@@ -2,6 +2,8 @@ package com.example.tiptime
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.TextField
@@ -79,10 +81,10 @@ private fun calculateTip(amount: Double, tipPercent: Double = 15.0): String {
 
 @Composable
 fun EditNumberField(modifier: Modifier = Modifier) {
-    val amountInput = "0"
+    var amountInput = mutableStateOf("0")
     TextField(
-        value = amountInput,
-        onValueChange = {},
+        value = amountInput.value,
+        onValueChange = { amountInput.value = it },
         modifier = modifier
     )
 }
