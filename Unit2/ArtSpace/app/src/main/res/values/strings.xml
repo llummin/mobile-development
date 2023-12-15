@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ArtSpaceAPP</string>
+    <string name="image_name_1">Sally A</string>
+    <string name="image_name_2">Sally O</string>
+    <string name="image_name_3">Sally Ogh</string>
+    <string name="image_name_4">I see you</string>
+    <string name="author_1">Monstrs Inc</string>
+    <string name="author_2">Danil K</string>
+    <string name="author_3">Mike Wazosky</string>
+    <string name="author_4">By</string>
+    <string name="year_1">2002</string>
+    <string name="year_2">2023</string>
+    <string name="year_3">10</string>
+    <string name="year_4">05</string>
+</resources>
